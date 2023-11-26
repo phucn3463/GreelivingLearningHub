@@ -1,0 +1,327 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    box-sizing: inherit;
+}
+
+/* Start of HEADER */ 
+header {
+    position: relative;
+    background: #EEE;
+}
+
+.vu19 {
+    width: 100%;
+    height: 100px;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vu23 {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.vu19 .vu22 {
+    display: flex;
+    gap: 13rem;
+    margin-right: 100px;
+}
+
+.vu22 .vu23:hover {
+    color: #012169;
+    transition: 0.3s;
+}
+
+.vu22 li {
+    list-style: none;
+}
+
+.vu22 .vu23.active {
+    color: #012169;
+}
+
+.vu21 {
+    margin-left: 5rem;
+    width: 10rem;
+}
+
+.vu27 i {
+    font-size: 1.3rem;
+}
+
+.vu27 .vu23:hover {
+    color: #012169;
+    transition: 0.3s;
+}
+/* End of HEADER */
+
+/* Start of FOOTER */
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+}
+ 
+.vu24 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+ 
+.vu24 h3 {
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+ 
+.vu25 {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+ 
+.vu25 li {
+    margin: 0 10px;
+}
+ 
+.vu25 a {
+    text-decoration: none;
+    color: white;
+}
+ 
+.vu25 a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+ 
+.vu25 a:hover i {
+    color: red;
+}
+ 
+.vu26 {
+    padding: 1rem 0;
+    text-align: center;
+}
+ 
+.vu26 p {
+    font-size: 1rem;
+    word-spacing: 2px;
+}
+/* End of FOOTER */
+
+/* Start of LOGIN PAGE */
+.vu00 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100%;
+    margin: 5% 0;
+}
+
+.vu1 {
+    position: relative;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+    background: #FFF;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+                0 10px 10px rgba(0, 0, 0, 0.22)
+}
+
+.vu2, .vu8 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.vu2 {
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.vu8 {
+    width: 50%;
+    z-index: 2;
+}
+
+.vu3 {
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+}
+
+.vu4 {
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.vu7 input {
+    background: #EEE;
+    padding: 12px 15px;
+    margin: 8px 16px 8px 0px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.vu0 {
+    padding: 12px 15px;
+    width: 100%;
+}
+
+.vu0 p {
+    width: 60%;
+    margin-bottom: 8px;
+}
+
+.vu16 {
+    margin: 0 6px 0 10px;
+}
+.vu17 {
+    margin-right: 6px;
+}
+
+.vu1 a {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+
+.vu1 button,
+.vu18 {
+    color: #fff;
+    background: #c81830;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 55px;
+    margin: 20px;
+    border-radius: 20px;
+    border: 1px solid #c81830;
+    outline: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    cursor: pointer;
+}
+
+.vu18:active {
+    transform: scale(0.90);
+}
+
+#vu12, #vu14 {
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.vu1.right-panel-active .vu8 {
+    transform: translateX(100%);
+}
+
+.vu1.right-panel-active .vu2 {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+}
+
+.vu9 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+}
+
+.vu1.right-panel-active .vu9 {
+    transform: translateX(-100%);
+}
+
+.vu10 {
+    position: relative;
+    color: #fff;
+    background: #3f826d;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    background: linear-gradient(#012169, #012169);
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.vu1.right-panel-active .vu10 {
+    transform: translateX(50%);
+}
+
+.vu11, .vu13 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.vu11 {
+    transform: translateX(-20%);
+}
+
+.vu13 {
+    right: 0;
+    transform: translateX(0);
+}
+
+.vu1.right-panel-active .vu11 {
+    transform: translateX(0);
+}
+
+.vu1.right-panel-active .vu13 {
+    transform: translateX(20%);
+}
+/* End of LOGIN PAGE */
+
+/* Start of EMPLOYER PAGE */
+
+/* End of EMPLOYER PAGE */
