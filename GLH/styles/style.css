@@ -1,0 +1,1192 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Start of HEADER */
+header {
+    background-color: white;
+}
+header nav{
+    background-size: 100%;
+    height: 1%;
+
+}
+header nav ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+header nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 5px 5%;
+    font-size: 125%;
+}
+header nav ul li a{
+    color:rgb(0, 66, 153);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0;
+}
+header nav ul li a img{
+    height: 60px;
+}
+/* End of HEADER */
+
+/* Start of FOOOTER */
+footer {
+    background-color: #000;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+footer h3{
+    color: white;
+    font-size: medium;
+    background-color: #000
+}
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+footer ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 5%;
+    font-size: 125%;
+}
+footer ul li i {
+    color: white;
+}
+footer p {
+    margin: 25px 0 15px 0;
+}
+/* End of FOOOTER */
+
+/* Start of LOGIN PAGE */
+.vu00 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100%;
+    margin: 10% 0;
+}
+
+.vu1 {
+    position: relative;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+    background: #FFF;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+                0 10px 10px rgba(0, 0, 0, 0.22)
+}
+
+.vu2, .vu8 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.vu2 {
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.vu8 {
+    width: 50%;
+    z-index: 2;
+}
+
+.vu3 {
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+}
+
+.vu4 {
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.vu7 input {
+    background: #EEE;
+    padding: 12px 15px;
+    margin: 8px 16px 8px 0px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.vu0 {
+    padding: 12px 15px;
+    width: 100%;
+}
+
+.vu0 p {
+    width: 60%;
+    margin-bottom: 8px;
+}
+
+.vu16 {
+    margin: 0 6px 0 10px;
+}
+.vu17 {
+    margin-right: 6px;
+}
+
+.vu1 a {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+
+.vu1 button,
+.vu18 {
+    color: #fff;
+    background: #c81830;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 55px;
+    margin: 20px;
+    border-radius: 20px;
+    border: 1px solid #c81830;
+    outline: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    cursor: pointer;
+}
+
+.vu18:active {
+    transform: scale(0.90);
+}
+
+#vu12, #vu14 {
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.vu1.right-panel-active .vu8 {
+    transform: translateX(100%);
+}
+
+.vu1.right-panel-active .vu2 {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+}
+
+.vu9 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+}
+
+.vu1.right-panel-active .vu9 {
+    transform: translateX(-100%);
+}
+
+.vu10 {
+    position: relative;
+    color: #fff;
+    background: #3f826d;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    background: linear-gradient(#012169, #012169);
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.vu1.right-panel-active .vu10 {
+    transform: translateX(50%);
+}
+
+.vu11, .vu13 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.vu11 {
+    transform: translateX(-20%);
+}
+
+.vu13 {
+    right: 0;
+    transform: translateX(0);
+}
+
+.vu1.right-panel-active .vu11 {
+    transform: translateX(0);
+}
+
+.vu1.right-panel-active .vu13 {
+    transform: translateX(20%);
+}
+/* End of LOGIN PAGE */
+
+/* Start of CREATE PROFILE PAGE */
+.create-profile {
+    margin: 5%;
+}
+.create-profile h3 {
+    font-size: 4vh;
+    margin-left: 43%;
+    margin-bottom: 3%;
+}
+.form-create-profile {
+    background-color: #002179;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgb(78, 78, 78);
+    padding: 3% 0 3% 25%;
+}
+.form-create-profile-section {
+    background-color: #f9f9fb;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 5%;
+    width: 600px;
+}
+.form-create-profile-element {
+    width: 100%;
+    padding-bottom: 3%;
+    font-size: 3vh;
+}
+.form-create-profile-element input,
+.form-create-profile-element span,
+.form-create-profile-element select {
+    width: 35%;
+    padding: 2%;
+    border-radius: 10px;
+}
+.form-create-profile-button {
+    width: 250px;
+    padding: 2%;
+    border-radius: 1000px;
+    background-color: #a40711;
+    color: white;
+    box-shadow: 2px 2px 35px rgb(78, 75, 75);
+    border: none;
+    font-size: 3vh;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+/* End of CREATE PROFILE PAGE */
+
+/* Start of USER DASHBOARD */
+.userDashboard h1 {
+    margin: 0;
+    padding: 45px 15% 45px 15%;
+    font-size: 8vh;
+    text-align: center;
+}
+.userDashboard h2 {
+    margin: 0 5% 5% 5%;
+    font-size: 4vh;
+}
+.userDashboard h3 {
+    margin: 0 5% 0 5%;
+    font-size: 3vh;
+}
+.userDashboard div.contents {
+    background-color: #002179;
+    margin: 5%;
+    margin-top: 1%;
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgb(78, 78, 78);
+}
+.userDashboard div.content {
+    background-color: #f9f9fb;
+    width: 25.3%;
+    margin: 2%;
+    border-radius: 2.5%;
+    padding: 1% 2% 3% 2%;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+}
+.userDashboard div.content p:last-child {
+    margin-top: 20px;
+}
+.userDashboard div.contentcv {
+    min-width: 85%;
+    margin: 20px;
+}
+.userDashboard div.contentcv p {
+    color: white;
+}
+.userDashboard div.contentcv ul li {
+    color: white;
+}
+.userDashboard div p.editcv {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.userDashboard div p.editcv a, .userDashboard div.content a {
+    background-color: #a40711;
+    color: white;
+    text-decoration: none;
+    padding: 7.5px 15px;
+    box-shadow: 2px 2px 35px rgb(78, 75, 75);
+    border-radius: 1000px;
+}
+.userDashboard div.content p:first-child {
+    font-size: larger;
+    font-weight: bolder;
+}
+.userDashboard div.nocontent {
+    color: white;
+    min-width: 85%;
+    margin: 20px;
+}
+.userDashboard div.nocontent a {
+    box-shadow: 2px 2px 35px rgb(14, 12, 12);
+}
+/* End of USER DASHBOARD */
+
+/* Start of USER PAGE */
+.user-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 8% 0;
+}
+.user-section i {
+    font-size: 7rem;
+    margin-bottom: 3%;
+    padding: 4%;
+    background-color: #EEE;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.user-section button {
+    width: 250px;
+    font-size: 2vh;
+    margin-bottom: 10%;
+    padding: 5%;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.user-section1 {
+    background-color: #012169;
+    border: #012169;
+
+}
+.user-section2 {
+    background-color: #206901;
+    border: #206901;
+}
+.user-section3 {
+    background-color: #a40711;
+    border: #a40711;
+}
+/* End of USER PAGE */
+
+/* Start of CHANGE PASSWORD PAGE */
+.change-password-section {
+    margin: 5%;
+}
+.change-password-section h1 {
+    font-size: 4vh;
+    margin-left: 43%;
+    margin-bottom: 3%;
+}
+.form-change-password {
+    background-color: #002179;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgb(78, 78, 78);
+    padding: 3% 0 3% 25%;
+}
+.form-change-password-section {
+    background-color: #f9f9fb;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 5%;
+    width: 600px;
+}
+.form-change-password-element input,
+.form-change-password-element label {
+    width: 35%;
+    padding: 2%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+.form-change-password-button {
+    width: 300px;
+    padding: 2%;
+    border-radius: 1000px;
+    background-color: #a40711;
+    color: white;
+    box-shadow: 2px 2px 35px rgb(78, 75, 75);
+    border: none;
+    font-size: 2.5vh;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+/* End of CHANGE PASSWORD PAGE */
+
+/* Start of UPDATE PROFILE PAGE */
+.update-profile h1 {
+    font-size: 4vh;
+    margin-left: 43%;
+    margin-bottom: 3%;
+}
+.form-update-profile {
+    background-color: #002179;
+    box-shadow: 5px 5px 20px rgb(78, 78, 78);
+    padding: 3% 0 3% 25%;
+}
+.form-update-profile-section {
+    background-color: #f9f9fb;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 5%;
+    width: 600px;
+}
+.form-update-profile-element {
+    width: 100%;
+    padding-bottom: 3%;
+    font-size: 3vh;
+}
+.form-update-profile-element input,
+.form-update-profile-element span,
+.form-update-profile-element select {
+    width: 35%;
+    padding: 2%;
+    border-radius: 10px;
+}
+.form-update-profile-button {
+    width: 250px;
+    padding: 2%;
+    border-radius: 1000px;
+    background-color: #a40711;
+    color: white;
+    box-shadow: 2px 2px 35px rgb(78, 75, 75);
+    border: none;
+    font-size: 3vh;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+/* End of UPDATE PROFILE PAGE */
+
+
+
+/* EMPLOYER */
+
+/* Start of CREATING JOB PAGE */
+.create-job-section {
+    margin: 5%;
+}
+.create-job-title {
+    font-size: 4vh;
+    margin-left: 45%;
+}
+.form-create-job {
+    background-color: #002179;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgb(78, 78, 78);
+    padding: 3% 0 3% 25%;
+}
+.form-create-job-section {
+    background-color: #f9f9fb;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 5%;
+    width: 600px;
+}
+.form-create-job-element {
+    width: 100%;
+    padding-bottom: 3%;
+    font-size: 3vh;
+}
+.form-create-job-element input,
+.form-create-job-element select {
+    width: 35%;
+    padding: 2%;
+    border-radius: 10px;
+}
+.form-create-job-button {
+    width: 250px;
+    padding: 2%;
+    border-radius: 1000px;
+    background-color: #a40711;
+    color: white;
+    box-shadow: 2px 2px 35px rgb(78, 75, 75);
+    border: none;
+    font-size: 3vh;
+    margin-left: 30%;
+    margin-top: 2%;
+}
+/* End of CREATING JOB PAGE */
+
+/* Start of JOB DETAIL PAGE */
+.job-detail-employer {
+    margin: 5%;
+}
+.job-detail-employer h1 {
+    text-align: center;
+}
+.job-detail-employer-section {
+    border-radius: 15px;
+}
+.job-detail-employer-detail {
+    background-color: #f9f9fb;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 5%;
+    width: 70%;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+.job-detail-employer-detail p {
+    margin: auto 0;
+}
+.job-detail-employer-elements {
+    margin-top: 7%;
+}
+.job-detail-employer-elements:last-child {
+    text-align: center;
+}
+.job-detail-employer-3elements {
+    text-decoration: none;
+    padding: 2%;
+    border-radius: 1000px;
+    background-color: #a40711;
+    color: white;
+    box-shadow: 2px 2px 35px rgb(78, 75, 75);
+    border: none;
+    margin-right: 15px;
+}
+/* End of JOB DETAIL PAGE */
+
+/* Start of EDIT JOB PAGE */
+.edit-job-section {
+    margin: 5%;
+}
+.edit-job-title {
+    font-size: 4vh;
+    margin-left: 40%;
+}
+.form-update-job {
+    background-color: #002179;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgb(78, 78, 78);
+    padding: 3% 0 3% 25%;
+}
+.form-edit-job-section {
+    background-color: #f9f9fb;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 5%;
+    width: 600px;
+}
+.form-edit-job-element {
+    width: 100%;
+    padding-bottom: 3%;
+    font-size: 3vh;
+}
+.form-edit-job-element input,
+.form-edit-job-element select {
+    width: 35%;
+    padding: 2%;
+    border-radius: 10px;
+}
+.form-edit-job-button {
+    width: 250px;
+    padding: 2%;
+    border-radius: 1000px;
+    background-color: #a40711;
+    color: white;
+    box-shadow: 2px 2px 35px rgb(78, 75, 75);
+    border: none;
+    font-size: 3vh;
+    margin-left: 30%;
+    margin-top: 2%;
+}
+/* End of EDIT JOB PAGE */
+
+/* Start of JOB APPLICATION PAGE */
+.job-application {
+    margin: 5%;
+}
+.job-application h1 {
+    text-align: center;
+}
+.job-application-section {
+    border-radius: 15px;
+}
+.job-application-detail {
+    background-color: #f9f9fb;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    border-radius: 15px;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.5;
+    padding-bottom: 15px;
+}
+.job-application-detail h2 {
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+}
+.job-application-details {
+    background-color: #f9f9fb;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+    border-radius: 15px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px;
+    line-height: 1.5;
+    margin-bottom: 5%;
+}
+.job-application-details p {
+    margin: 5px 0 5px 20px;
+}
+.job-application-details p:first-child {
+    font-weight: bolder;
+    font-size: larger;
+}
+.job-application-cv,
+.job-application-status {
+    width: 150px;
+    padding: 5px 12px;
+    border-radius: 1000px;
+    background-color: #a40711;
+    color: white;
+    border: none;
+    text-decoration: none;
+    margin-left: 2%;
+    font-size: 2vh;
+}
+/* End of JOB APPLICATION PAGE */
+
+/* Start of CHANGE STATUS PAGE */
+.change-status-section {
+    margin: 5% 5% 10% 5%;
+}
+.change-status-section h1 {
+    font-size: 4vh;
+    margin-left: 40%;
+    margin-bottom: 3%;
+}
+.form-change-status {
+    background-color: #002179;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgb(78, 78, 78);
+    padding: 3% 0 3% 25%;
+}
+.form-change-status-section {
+    background-color: #f9f9fb;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 5%;
+    width: 600px;
+}
+.form-change-status-element input,
+.form-change-status-element select {
+    width: 35%;
+    padding: 2%;
+    border-radius: 10px;
+}
+.form-change-status-button {
+    width: 250px;
+    padding: 2%;
+    border-radius: 1000px;
+    background-color: #a40711;
+    color: white;
+    box-shadow: 2px 2px 35px rgb(78, 75, 75);
+    border: none;
+    font-size: 3vh;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+/* End of CHANGE STATUS PAGE */
+
+/* Start of CHANGE APPOINTMENT PAGE */
+.change-appointment-section {
+    margin: 5%;
+}
+.change-appointment-section h1 {
+    font-size: 4vh;
+    margin-left: 43%;
+    margin-bottom: 3%;
+}
+.form-change-appointment {
+    background-color: #002179;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgb(78, 78, 78);
+    padding: 3% 0 3% 25%;
+}
+.form-change-appointment-section {
+    background-color: #f9f9fb;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 5%;
+    width: 600px;
+}
+.form-change-appointment-element input,
+.form-change-appointment-element label {
+    width: 35%;
+    padding: 2%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+.form-change-status-button {
+    width: 300px;
+    padding: 2%;
+    border-radius: 1000px;
+    background-color: #a40711;
+    color: white;
+    box-shadow: 2px 2px 35px rgb(78, 75, 75);
+    border: none;
+    font-size: 2.5vh;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+/* End of CHANGE APPOINTMENT PAGE */
+
+
+
+/* CANDIDATE */
+
+/* Start of COURSE SEARCH PAGE */
+main.candidatecoursesearch h1 {
+    text-align: center;
+    padding: 2%;
+}
+main.candidatecoursesearch div.listpane, div.paging, div.formfilter {
+    background-color: #dddddd;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 2px 2px 35px rgb(230, 230, 230);
+}
+main.candidatecoursesearch div.formfilter {
+
+}
+main.candidatecoursesearch div.listpane div.listcontent {
+    background-color: #002179;
+    margin: 5%;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 2px 2px 35px rgb(160, 160, 160);
+    color: white;
+}
+main.candidatecoursesearch div.listpane div.listcontent p {
+    margin: 15px 0;
+}
+main.candidatecoursesearch div.listpane div.listcontent p:last-child {
+    margin: 30px 0;
+}
+main.candidatecoursesearch div.listpane div.listcontent p a {
+    background-color: #a40711;
+    color: white;
+    text-decoration: none;
+    padding: 7.5px 15px;
+    box-shadow: 2px 2px 35px rgb(78, 75, 75);
+    border-radius: 1000px;
+}
+main.candidatecoursesearch div.paging p {
+    text-align: center;
+}
+main.candidatecoursesearch div.paging p a {
+    margin: 0 2px;
+}
+/* End of COURSE SEARCH PAGE */
+
+/* Start of COURSE DETAIL PAGE */
+main.candidatecoursedetailpage h1 {
+    text-align: center;
+    padding: 2%;
+}
+main.candidatecoursedetailpage div{
+    background-color: #dddddd;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 2px 2px 35px rgb(230, 230, 230);
+}
+main.candidatecoursedetailpage div h2, p{
+    margin: 15px 30px;
+}
+main.candidatecoursedetailpage div:last-child p {
+    margin: 30px 0;
+    text-align: center; 
+}
+main.candidatecoursedetailpage div:last-child p a{
+    background-color: #a40711;
+    color: white;
+    text-decoration: none;
+    padding: 7.5px 15px;
+    box-shadow: 2px 2px 35px rgb(78, 75, 75);
+    border-radius: 1000px;
+}
+/* End of COURSE DETAIL PAGE */
+
+/* Start of PAYMENT PAGE */
+.register-course {
+    margin: 5%;
+}
+
+.register-course h1 {
+    text-align: center;
+}
+.form-register-course-section {
+    background-color: #f9f9fb;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 5%;
+    width: 70%;
+    margin: auto;
+}
+.form-register-course-section p {
+    font-size: larger;
+    font-weight: bold;
+}
+.form-register-course-element {
+    width: 100%;
+    padding-bottom: 3%;
+}
+.form-register-course-element input,
+.form-register-course-element span,
+.form-register-course-element select {
+    width: 35%;
+    padding: 2%;
+    border-radius: 10px;
+}
+.form-register-course-element1 input {
+    width: 10%;
+    padding: 2%;
+    border-radius: 10px;
+    margin-top: 3%;
+}
+.form-register-course-element1 {
+    width: 100%;
+    padding-bottom: 3%;
+}
+.form-register-course-button {
+    width: 250px;
+    padding: 2%;
+    border-radius: 1000px;
+    background-color: #a40711;
+    color: white;
+    box-shadow: 2px 2px 35px rgb(78, 75, 75);
+    border: none;
+}
+/* End of PAYMENT PAGE */
+
+/* Start of PAYMENT STATUS PAGE */
+main.paymentstatus {
+    text-align: center;
+}
+main.paymentstatus h1 {
+    padding: 2%;
+}
+main.paymentstatus p {
+    margin: 20px 0;
+}
+main.paymentstatus p a {
+    background-color: #a40711;
+    color: white;
+    text-decoration: none;
+    padding: 7.5px 15px;
+    box-shadow: 2px 2px 35px rgb(78, 75, 75);
+    border-radius: 1000px;
+}
+/* End of PAYMENT STATUS PAGE */
+
+/* Start of JOB SEARCH PAGE */
+main.candidatejobsearch h1 {
+    text-align: center;
+    padding: 2%;
+}
+main.candidatejobsearch div.listpane, div.paging, div.formfilter {
+    background-color: #dddddd;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 2px 2px 35px rgb(230, 230, 230);
+}
+main.candidatejobsearch div.formfilter {
+
+}
+main.candidatejobsearch div.listpane div.listcontent {
+    background-color: #002179;
+    margin: 5%;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 2px 2px 35px rgb(160, 160, 160);
+    color: white;
+}
+main.candidatejobsearch div.listpane div.listcontent p {
+    margin: 15px 0;
+}
+main.candidatejobsearch div.listpane div.listcontent p:last-child {
+    margin: 30px 0;
+}
+main.candidatejobsearch div.listpane div.listcontent p a {
+    background-color: #a40711;
+    color: white;
+    text-decoration: none;
+    padding: 7.5px 15px;
+    box-shadow: 2px 2px 35px rgb(78, 75, 75);
+    border-radius: 1000px;
+}
+main.candidatejobsearch div.paging p {
+    text-align: center;
+}
+main.candidatejobsearch div.paging p a {
+    margin: 0 2px;
+}
+/* End of JOB SEARCH PAGE */
+
+/* Start of COURSE REGISTRATION DETAIL PAGE */
+main.learningcoursedetail {
+    padding-bottom: 150px;
+}
+main.learningcoursedetail h1 {
+    text-align: center;
+    padding: 2%;
+}
+main.learningcoursedetail div {
+    width: 70%;
+    margin: 30px auto;
+    background-color: #f9f9fb;
+    border-radius: 5px;
+    box-shadow: 2px 2px 35px rgb(160, 160, 160);
+    padding: 15px;
+}
+main.learningcoursedetail div h2, p {
+    margin: 5px 0;
+}
+main.learningcoursedetail div:last-child .ratebutton {
+    background-color: #a40711;
+    color: white;
+    padding: 2px 15px;
+    margin-left: 30px;
+    box-shadow: 2px 2px 35px rgb(78, 75, 75);
+    border-radius: 1000px;
+}
+/* End of COURSE REGISTRATION DETAIL PAGE */
+
+/* Start of CANDIDATE JOB DETAIL PAGE */
+main.candidatecoursedetail h1 {
+    text-align: center;
+    padding: 5%;
+}
+main.candidatecoursedetail div {
+    background-color: #f9f9fb;
+    width: 80%;
+    border-radius: 15px;
+    padding: 1% 2% 3% 2%;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    margin: 40px auto;
+}
+main.candidatecoursedetail div:last-child {
+    padding-bottom: 15px;
+}
+.applybutton {
+    text-align: center;
+    margin: 30px;
+}
+.applybutton a {
+    background-color: #a40711;
+    color: white;
+    padding: 15px 30px;
+    box-shadow: 2px 2px 35px rgb(78, 75, 75);
+    border-radius: 1000px;
+    text-decoration: none;
+}
+/* End of CANDIDATE JOB DETAIL PAGE */
+
+/* Start of CANDIDATE APPLY JOB PAGE */
+.apply-job h1 {
+    text-align: center;
+    padding: 5%;
+}
+.form-apply-job {
+    padding-bottom: 80px;
+}
+.form-apply-job-section {
+    background-color: #f9f9fb;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 5%;
+    width: 50%;
+    margin: auto;
+}
+.form-apply-job-element {
+    width: 100%;
+    padding-bottom: 3%;
+}
+.form-apply-job-element input,
+.form-apply-job-element label {
+    width: 35%;
+    padding: 2%;
+    border-radius: 10px;
+}
+.form-apply-job-button {
+    width: 250px;
+    padding: 2%;
+    border-radius: 1000px;
+    background-color: #a40711;
+    color: white;
+    box-shadow: 2px 2px 35px rgb(78, 75, 75);
+    border: none;
+    margin-top: 5%;
+}
+/* End of CANDIDATE APPLY JOB PAGE */
+
+/* Start of CANDIDATE APPLICATION DETAIL PAGE */
+main.jobapplicationdetailcandidate h1 {
+    text-align: center;
+    padding: 5%;
+}
+main.jobapplicationdetailcandidate div {
+    background-color: #f9f9fb;
+    width: 80%;
+    border-radius: 15px;
+    padding: 1% 2% 3% 2%;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    margin: 40px auto;
+}
+main.jobapplicationdetailcandidate div:last-child {
+    padding-bottom: 15px;
+}
+.viewcvbuttton {
+    background-color: #a40711;
+    color: white;
+    padding: 2px 15px;
+    box-shadow: 2px 2px 35px rgb(78, 75, 75);
+    border-radius: 1000px;
+    text-decoration: none;
+}
+/* End of CANDIDATE APPLICATION DETAIL PAGE */
+
+/* Start of ONLINE CV PAGE */
+main.onlinecv h1 {
+    text-align: center;
+    padding: 5%;
+}
+main.onlinecv div.curentexp, div.addnewexp {
+    background-color: #f9f9fb;
+    width: 80%;
+    border-radius: 15px;
+    padding: 1% 2% 3% 2%;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    margin: 40px auto;
+}
+main.onlinecv div.addnewexp {
+    padding-bottom: 15px;
+}
+main.onlinecv div.curentexp table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+main.onlinecv div.curentexp table th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+main.onlinecv div.curentexp table th {
+    background-color: #f2f2f2;
+}
+main.onlinecv div.curentexp table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+main.onlinecv div.curentexp table tr:hover {
+    background-color: #e6f7ff;
+}
+main.onlinecv div.curentexp table a {
+    background-color: #a40711;
+    color: white;
+    padding: 2px 15px;
+    box-shadow: 2px 2px 35px rgb(78, 75, 75);
+    border-radius: 1000px;
+    text-decoration: none;
+}
+main.onlinecv div.addnewexp form {
+    padding: 5%;
+    margin: auto;
+}
+main.onlinecv div.addnewexp form button {
+    background-color: #a40711;
+    color: white;
+    padding: 5px 15px;
+    box-shadow: 2px 2px 35px rgb(78, 75, 75);
+    border-radius: 1000px;
+    text-decoration: none;
+    margin-top: 30px;
+}
+/* Start of ONLINE CV PAGE */
+
+/* Start of EDIT CV PAGE */
+main.editexp h1 {
+    text-align: center;
+    padding: 5%;
+}
+main.editexp form {
+    background-color: #f9f9fb;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 5%;
+    width: 50%;
+    margin: auto;
+}
+main.editexp form button {
+    background-color: #a40711;
+    color: white;
+    padding: 5px 15px;
+    box-shadow: 2px 2px 35px rgb(78, 75, 75);
+    border-radius: 1000px;
+    text-decoration: none;
+    margin-top: 30px;
+}
+/* Start of EDIT CV PAGE */
